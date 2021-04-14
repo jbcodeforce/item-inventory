@@ -15,7 +15,7 @@ public class InventoryResourceTest {
           .when().get("/inventory/store/store_1")
           .then()
              .statusCode(200)
-             .body("id", is("store_1")).extract().response();
+             .body("storeName", is("store_1")).extract().response();
     }
 
 }
